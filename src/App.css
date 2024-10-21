@@ -389,3 +389,81 @@ body {
   font-size: 18px;
   cursor: pointer;
 }
+
+/* Media queries for mobile responsiveness */
+@media screen and (max-width: 768px) {
+  .hero-container {
+    height: auto;
+    /* Adjust height for smaller screens */
+    padding: 20px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .navbar {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    margin: 10px 0;
+  }
+
+  .auth-buttons {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .hero-content {
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: 36px;
+    /* Reduce font size for smaller screens */
+  }
+
+  .hero-content p {
+    font-size: 16px;
+    max-width: 90%;
+  }
+
+  .hero-buttons button {
+    margin: 10px 0;
+    width: 100%;
+  }
+
+  .story-container {
+    flex-direction: column;
+    padding: 20px;
+    height: auto;
+  }
+
+  .story-content {
+    max-width: 100%;
+    padding-right: 0;
+    text-align: center;
+  }
+
+  .story-image-container {
+    max-width: 100%;
+    margin-top: 20px;
+  }
+
+  .since-box {
+    position: static;
+    margin: 20px auto 0 auto;
+  }
+
+  .service-grid {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .service-card {
+    width: 90%;
+    margin: 10px auto;
+  }
+}

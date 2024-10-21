@@ -16,7 +16,7 @@ const App = () => {
             <div style={styles.blogContainer}>
                 <div style={styles.blogCard}>
                     <img
-                        src={green} // Replace with actual image URL
+                        src={green}
                         alt="Innovations for a Greener Future"
                         style={styles.image}
                     />
@@ -29,7 +29,7 @@ const App = () => {
 
                 <div style={styles.blogCard}>
                     <img
-                        src={power} // Replace with actual image URL
+                        src={power}
                         alt="The Power of Agricultural Analytics"
                         style={styles.image}
                     />
@@ -42,7 +42,7 @@ const App = () => {
 
                 <div style={styles.blogCard}>
                     <img
-                        src={cult} // Replace with actual image URL
+                        src={cult}
                         alt="Cultivating Sustainable and Resilient Farms"
                         style={styles.image}
                     />
@@ -88,6 +88,7 @@ const styles = {
         maxWidth: '300px',
         textAlign: 'left',
         padding: '10px',
+        flex: '1 0 300px', // Added flex for responsiveness
     },
     image: {
         width: '100%',
@@ -107,6 +108,35 @@ const styles = {
         color: '#2e6052',
         textDecoration: 'none',
         fontWeight: 'bold',
+    },
+};
+
+// Media queries for mobile responsiveness
+const mediaQueries = {
+    '@media (max-width: 768px)': {
+        heading: {
+            fontSize: '28px',
+        },
+        subheading: {
+            fontSize: '14px',
+        },
+        blogCard: {
+            maxWidth: '90%', // Allow cards to be wider on mobile
+        },
+    },
+    '@media (max-width: 480px)': {
+        heading: {
+            fontSize: '24px',
+        },
+        subheading: {
+            fontSize: '12px',
+        },
+        cardTitle: {
+            fontSize: '16px',
+        },
+        cardDescription: {
+            fontSize: '12px',
+        },
     },
 };
 

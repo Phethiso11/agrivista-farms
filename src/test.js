@@ -59,6 +59,7 @@ const styles = {
         margin: '0 auto',
         position: 'relative',
         height: '300px',
+        flexDirection: 'row',
     },
     image: {
         borderRadius: '10px',
@@ -89,6 +90,36 @@ const styles = {
         fontSize: '1rem',
         color: '#ddd',
     },
+
+    // Add media query for mobile responsiveness
+    '@media (max-width: 768px)': {
+        card: {
+            flexDirection: 'column',
+            height: 'auto',
+            padding: '20px',
+        },
+        image: {
+            marginRight: '0',
+            marginBottom: '20px',
+            width: '100px',
+            height: '100px',
+        },
+        heading: {
+            fontSize: '2rem',
+        },
+        description: {
+            fontSize: '1rem',
+        },
+        name: {
+            fontSize: '1.25rem',
+        },
+        title: {
+            fontSize: '0.9rem',
+        },
+        testimonialText: {
+            fontSize: '0.9rem',
+        },
+    }
 };
 
 export default Testimonials;

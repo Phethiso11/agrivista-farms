@@ -20,6 +20,8 @@
     display: flex;
     justify-content: center;
     gap: 20px;
+    flex-wrap: wrap;
+    /* Allow wrapping for smaller screens */
 }
 
 .product-card {
@@ -59,4 +61,56 @@
 
 .see-all-link:hover {
     text-decoration: underline;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+    .featured-products h2 {
+        font-size: 2rem;
+        /* Smaller title */
+    }
+
+    .featured-products p {
+        font-size: 1rem;
+        /* Smaller paragraph text */
+    }
+
+    .product-card {
+        width: 100%;
+        /* Full width on smaller screens */
+        max-width: 300px;
+        /* Limit the maximum width */
+    }
+
+    .product-list {
+        gap: 10px;
+        /* Reduce gap between cards */
+    }
+}
+
+@media (max-width: 480px) {
+    .featured-products h2 {
+        font-size: 1.5rem;
+        /* Further reduce title size */
+    }
+
+    .featured-products p {
+        font-size: 0.9rem;
+        /* Further reduce paragraph text */
+    }
+
+    .product-card {
+        padding: 15px;
+        /* Adjust padding for smaller screens */
+    }
+
+    .product-card h3 {
+        font-size: 1.2rem;
+        /* Smaller heading on mobile */
+    }
+
+    .product-card p {
+        font-size: 0.8rem;
+        /* Smaller description text */
+    }
 }

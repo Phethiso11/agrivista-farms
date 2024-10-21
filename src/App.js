@@ -11,8 +11,8 @@ import BenefitSection from './benefit';
 import BlogSection from './blog.js';
 import Footer from './footer.js';
 import Testimonials from './test.js';
-function App() {
 
+function App() {
   return (
     <>
       <div className="hero-container">
@@ -20,8 +20,8 @@ function App() {
           <div className="logo">Agrivista Farms</div>
           <ul className="nav-links">
             <li><a href="/">Home</a></li>
-            <li><a href="/about">About Us</a></li>
-            <li><a href="/pages">Pages</a></li>
+            <li><a href="/">About Us</a></li>
+            <li><a href="/">Pages</a></li>
           </ul>
           <div className="auth-buttons">
             <button className="login-btn">Login</button>
@@ -52,7 +52,7 @@ function App() {
             Li Europan lingues es membres del sam familie. Lor separat existentie es un myth.
             Por scientie, musica, sport etc, litot Europa usa li sam vocabular.
           </p>
-          <button className="get-started-btn">Get Started</button>
+          <button className='get-started-btn'>Get Started</button>
         </div>
         <div className="story-image-container">
           <img src={story} alt="Agriculture Field" className="story-image" />
@@ -71,33 +71,28 @@ function App() {
             <img src={blog} alt="Blog and Article Writing" className="service-icon" />
             <h3>Blog and Article Writing</h3>
           </div>
-
           <div className="service-card">
-            <img src={web} alt="Website Content" className="service-icon" />
+            <img src={web} alt="Web Designing" className="service-icon" />
             <h3>Website Content</h3>
           </div>
-
           <div className="service-card">
-            <img src={con} alt="Content Strategy and Consulting" className="service-icon" />
+            <img src={con} alt="Content Creation" className="service-icon" />
             <h3>Content Strategy and Consulting</h3>
           </div>
-
           <div className="service-card">
             <img src={soc} alt="Social Media Management" className="service-icon" />
             <h3>Social Media Management</h3>
           </div>
         </div>
       </div>
-
-      <FeaturedProducts />;
-      <HeroSection />;
-      <BenefitSection />;
-      <BlogSection />;
-      <Testimonials />;
-      <Footer />;
+      <FeaturedProducts />
+      <HeroSection />
+      <BenefitSection />
+      <Testimonials />
+      <BlogSection />
+      <Footer />
     </>
   );
-
 }
 
 export default App;
