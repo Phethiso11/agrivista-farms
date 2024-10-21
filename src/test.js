@@ -48,7 +48,7 @@ const styles = {
         margin: '0 auto 50px',
     },
     card: {
-        backgroundColor: '#295e47',
+        backgroundColor: '#0f5340',
         color: '#fff',
         padding: '40px',
         borderRadius: '10px',
@@ -58,6 +58,7 @@ const styles = {
         maxWidth: '700px',
         margin: '0 auto',
         position: 'relative',
+        height: '300px',
     },
     image: {
         borderRadius: '10px',

@@ -1,5 +1,8 @@
 import React from 'react';
-
+import insta from './Group 83.jpg';
+import drib from './Group 84.jpg';
+import fac from './Group 85.jpg';
+import be from './Group 86.jpg';
 function Footer() {
     return (
         <div style={styles.footerContainer}>
@@ -7,10 +10,10 @@ function Footer() {
                 <h2 style={styles.title}>AgriVista Farms</h2>
                 <p style={styles.description}>Li Europan lingues es membres del sam familie. Lor separat existentie</p>
                 <div style={styles.iconsContainer}>
-                    <img src="icon-path-1" alt="icon1" style={styles.icon} />
-                    <img src="icon-path-2" alt="icon2" style={styles.icon} />
-                    <img src="icon-path-3" alt="icon3" style={styles.icon} />
-                    <img src="icon-path-4" alt="icon4" style={styles.icon} />
+                    <img src={insta} alt="icon1" style={styles.icon} />
+                    <img src={drib} alt="icon2" style={styles.icon} />
+                    <img src={fac} alt="icon3" style={styles.icon} />
+                    <img src={be} alt="icon4" style={styles.icon} />
                 </div>
             </div>
             <div style={styles.section}>
